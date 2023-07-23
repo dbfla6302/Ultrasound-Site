@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="./main.css">
 
     <!--Swiper-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
-    <!-- <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script> -->
-    <script src="https://www.kcch.re.kr/common/front/kor/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script defer src="./main.js"></script>
@@ -20,22 +19,32 @@
     <meta property="og:site_name" content="ultrasound">
     <meta property="og:title" content="Korean Society of Ultrasound in Medicine">
     <meta property="og:description" content="1980년 5월에 창립한 대한초음파의학회는 우리 나라의 초음파의학을 이끌어가는 선도 학회로서 꾸준히 발전해 왔으며 명실상부한 최고의 학술단체 중 하나가 되었습니다.">
-    <meta property="og:image" content="./img/logo.png">
+    <meta property="og:image" content="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/logo.png">
     <meta property="og:url" content="https://www.ultrasound.or.kr">
 
     <title>대한초음파의학회</title>
 </head>
 <body>
     <div class="wrapper">
+
+        <!-- skip-navigation -->
+        <div class="skip-nav" id="skip-navigation">
+            <p><a href="#header-wrap">헤더영역 바로가기</a></p>
+            <p><a href="#header-gnb-area">GNB영역 바로가기</a></p>
+            <p><a href="#container">컨텐츠영역 바로가기</a></p>
+            <p><a href="#footer">푸터영역 바로가기</a></p>
+        </div>
+        <!-- //skip-navigation -->
+
         <!-- HEADER -->
         <header>
             <div class="inner">
-                <h1 class="logo">
-                    <a href="javascript:void(0)"><img src="./img/logo.png" alt="대한초음파의학회 Korean Society of Ultrasound in Medicine"></a>
-                    <a href="javascript:$('.gnb').show(100)" class="mobile mo-gnbBtn"><img src="./img/mo-gnb.png" alt="모바일 gnb 오픈 icon"></a>
+                <h1 class="logo" id="header-wrap">
+                    <a href="javascript:void(0)"><img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/logo.png" alt="대한초음파의학회 Korean Society of Ultrasound in Medicine"></a>
+                    <a href="javascript:$('.gnb').show(100)" class="mobile mo-gnbBtn"><img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/mo-gnb.png" alt="모바일 gnb 오픈 icon"></a>
                 </h1>
     
-                <div class="gnb">
+                <div class="gnb" id="header-gnb-area">
                     <a href="javascript:$('.gnb').hide(100)" class="mobile mo-close" title="닫기"></a>
                     <!-- side gnb -->
                     <ul class="side-gnb">
@@ -117,14 +126,14 @@
         </header>
     
         <!-- MAIN -->
-        <main>
+        <main id="container">
             <section class="inner notice">
                 <div class="notice-sldie col50">
-                    <div class="swiper-container">
+                    <div class="swiper">
                         <ul class="swiper-wrapper">
-                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="./img/ban_slide01.png" alt="대한초음파의학회는 초음파 의학의 연구발전과 회원상호간의 친목과 교류를 통하여 초음파의학분야의 발전에 이바지 합니다."></a></li>
-                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="./img/ban_slide01.png" alt="대한초음파의학회는 초음파 의학의 연구발전과 회원상호간의 친목과 교류를 통하여 초음파의학분야의 발전에 이바지 합니다."></a></li>
-                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="./img/ban_slide01.png" alt="대한초음파의학회는 초음파 의학의 연구발전과 회원상호간의 친목과 교류를 통하여 초음파의학분야의 발전에 이바지 합니다."></a></li>
+                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/ban_slide01.png" alt="대한초음파의학회는 초음파 의학의 연구발전과 회원상호간의 친목과 교류를 통하여 초음파의학분야의 발전에 이바지 합니다."></a></li>
+                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/ban_slide02.png" alt="대한초음파의학회는 초음파 의학의 연구발전과 회원상호간의 친목과 교류를 통하여 초음파의학분야의 발전에 이바지 합니다."></a></li>
+                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/ban_slide03.png" alt="대한초음파의학회는 초음파 의학의 연구발전과 회원상호간의 친목과 교류를 통하여 초음파의학분야의 발전에 이바지 합니다."></a></li>
                         </ul>
                         <!-- 페이징 -->
                         <div class="swiper-pagination"></div>
@@ -143,21 +152,21 @@
             </section>
             <section class="inner guide">
                 <div class="guide-sldie col50">
-                    <div class="swiper-container">
+                    <div class="swiper">
                         <ul class="swiper-wrapper">
-                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="./img/slide01.png" alt="행사안내 대한초음파의학교육원(KAFE) 복부초음파 검사 입문 교육:강의 및 실습 자세히 보기"></a></li>
-                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="./img/slide01.png" alt="행사안내 대한초음파의학교육원(KAFE) 복부초음파 검사 입문 교육:강의 및 실습 자세히 보기"></a></li>
-                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="./img/slide01.png" alt="행사안내 대한초음파의학교육원(KAFE) 복부초음파 검사 입문 교육:강의 및 실습 자세히 보기"></a></li>
+                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/slide01.png" alt="행사안내 대한초음파의학교육원(KAFE) 복부초음파 검사 입문 교육:강의 및 실습 자세히 보기"></a></li>
+                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/slide02.png" alt="행사안내 대한초음파의학교육원(KAFE) 복부초음파 검사 입문 교육:강의 및 실습 자세히 보기"></a></li>
+                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/slide03.png" alt="행사안내 대한초음파의학교육원(KAFE) 복부초음파 검사 입문 교육:강의 및 실습 자세히 보기"></a></li>
                         </ul>
                         <!-- arrow -->
-                        <div class="swiper-prev"></div>
-                        <div class="swiper-next"></div>
+                        <button class="swiper-prev"></button>
+                        <button class="swiper-next"></button>
                     </div>
                 </div>
                 <ul class="col50 guide-info">
                     <li>
                         <h3>증례토론</h3>
-                        <span class="img"><img src="./img/img01.png" alt=""></span>
+                        <span class="img"><img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/img01.png" alt=""></span>
                         <span class="text">
                             <a href="javascript:void(0)">
                                 <q class="tit">F/9세, hematuria</q>
@@ -172,15 +181,15 @@
                     </li>
                     <li>
                         <h3>학회지</h3>
-                        <span class="img"><img src="./img/book.png" alt=""></span>
+                        <span class="img"><img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/book.png" alt=""></span>
                         <span class="text">
                             <q class="tit">
-                                ULTRA SONOGRAPY 
-                                <a class="more-btn" href="javascript:void(0)"><img src="./img/more-bgwh.png" alt="더보기 버튼"></a>
+                                <a href="javascript:void(0)">ULTRA SONOGRAPY </a>
+                                <a class="more-btn" href="javascript:void(0)"><img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/more-bgwh.png" alt="더보기 버튼"></a>
                             </q>
                             <q class="tit">
-                                ONLINE MANUSCRIPT <br> SUNMISSION 
-                                <a class="more-btn" href="javascript:void(0)"><img src="./img/more-bgwh.png" alt="더보기 버튼"></a>
+                                <a href="javascript:void(0)">ONLINE MANUSCRIPT <br> SUNMISSION</a>
+                                <a class="more-btn" href="javascript:void(0)"><img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/more-bgwh.png" alt="더보기 버튼"></a>
                             </q>
                         </span>
                     </li>
@@ -188,32 +197,32 @@
             </section>
             <aside class="inner quick-menu">
                 <ul>
-                    <li><a href="javascript:void(0)"><img src="./img/quick_bnr01.png" alt="일반인을 위한 초음파 진료 소개"></a></li>
-                    <li><a href="javascript:void(0)"><img src="./img/quick_bnr02.png" alt="대한초음파의학회 교육 홈페이지"></a></li>
-                    <li><a href="javascript:void(0)"><img src="./img/quick_bnr03.png" alt="대한초음파의학회 초음파 인증의 제도"></a></li>
-                    <li><a href="javascript:void(0)"><img src="./img/quick_bnr04.png" alt="INTERNATIONAL MEMBERSHIP KSUM"></a></li>
+                    <li><a href="javascript:void(0)"><img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/quick_bnr01.png" alt="일반인을 위한 초음파 진료 소개"></a></li>
+                    <li><a href="javascript:void(0)"><img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/quick_bnr02.png" alt="대한초음파의학회 교육 홈페이지"></a></li>
+                    <li><a href="javascript:void(0)"><img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/quick_bnr03.png" alt="대한초음파의학회 초음파 인증의 제도"></a></li>
+                    <li><a href="javascript:void(0)"><img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/quick_bnr04.png" alt="INTERNATIONAL MEMBERSHIP KSUM"></a></li>
                 </ul>
             </aside>
             <aside class="inner bottome-bnr">
                 <div class="bottome-sldie">
-                    <div class="swiper-container">
+                    <div class="swiper">
                         <ul class="swiper-wrapper">
-                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="./img/Banner01.png" alt="banner"></a></li>
-                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="./img/Banner02.png" alt="banner"></a></li>
-                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="./img/Banner03.png" alt="banner"></a></li>
-                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="./img/Banner04.png" alt="banner"></a></li>
-                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="./img/Banner05.png" alt="banner"></a></li>
+                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/Banner01.png" alt="banner"></a></li>
+                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/Banner02.png" alt="banner"></a></li>
+                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/Banner03.png" alt="banner"></a></li>
+                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/Banner04.png" alt="banner"></a></li>
+                            <li class="swiper-slide"><a href="javascript:void(0)"><img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/Banner05.png" alt="banner"></a></li>
                         </ul>
                     </div>
                     <!-- arrow -->
-                    <div class="swiper-prev"></div>
-                    <div class="swiper-next"></div>
+                    <button class="swiper-prev"></button>
+                    <button class="swiper-next"></button>
                 </div>
             </aside>
         </main>
     
         <!-- FOOTER -->
-        <footer>
+        <footer id="footer">
             <div class="inner">
                 <div class="foot-left">
                     <ul class="foot-top">
@@ -242,7 +251,7 @@
                         </ul>
                     </div>
                     <div class="ssl-img">
-                        <img src="./img/ssl.png" alt="RapidSSL">
+                        <img src="http://dbfla6302.dothome.co.kr/works/2023/ultrasound/img/ssl.png" alt="RapidSSL">
                     </div>
                 </div>
             </div>
